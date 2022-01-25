@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+  font-family:calibri;
+  padding:0;
+  margin:0;
+  background-color:#5d5c61;
+}
+
+.loginBox{
+ margin:1% auto 0% auto;
+ padding:5px 60px 20px 60px;
+ width:40%;
+ height:50%;
+ box-sizing:border-box;
+ background:rgba(0,0,0,.5);
+}
+
+h2{
+ margin:0;
+ padding:0 0 20px;
+ text-align:center;
+ color:rgb(245, 241, 245);
+
+}
+
+.loginBox p{
+ margin:0;
+ padding:0;
+ font-weight:bold;
+ color:#fff;
+}
+
+.loginBox input{
+ width:100%;
+ height:20px;
+ margin:0 0 20px 0;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"],
+.loginBox input[type="email"],
+.loginBox input[type="date"]{
+ border:none;
+ border-bottom:1px solid #fff;
+ background:transparent;
+ outline:none;
+ color:#fff;
+ font-size:14px;
+ text-align:center;
+}
+
+::placeholder{
+ color: rgb(100, 100, 100);
+ opacity:0.1;
+ text-align:center;
+}
+
+.loginBox input[type="submit"]{
+ border:1px solid;
+ height:40px;
+ color:rgb(214, 207, 214);
+ background-color:transparent;
+}
+
+.loginBox input[type="submit"]:hover{
+ color:rgb(187, 179, 180);
+ border:2px solid;
+}
+
+form a{
+ color:rgb(165, 154, 165);
+ text-decoration:none;
+}
+    </style>
+<meta charset="utf-8">
+<meta name="description" content="This Is a page practice about HTML 5 inputs & forms">
+<title>Input & Forms</title>
+</head>
+<body>
+ <header>
+
+ </header>
+ <main>
+  <div class="loginBox">
+   <h2>Sign Up</h2>
+   
+  <form>
+   <p>First Name</p>
+   	<input type="text" name="fname" placeholder="Firstname" required='required'>
+   <p>Last Name</p>
+   	<input type="text" name="lname" placeholder="Lastname" required='required'>
+   <p>Date Of Birth</p>
+   	<input type="date" required='required'>
+   <p>E-mail Address</p>
+   	<input type="email" name="email" placeholder="e-mail" required='required'>
+   <p>Password<p>
+	<input type="Password" name="pword1" placeholder="Create Password" required='required'>
+   <p>Re-enter Password</p>
+	<input type="password" name="pword2" Placeholder="Confirm Password" required='required'>
+   	<input type="Submit" name="sbmt">
+  
+  <p>Already have an account? <a href="/login">Sign In</a></p>
+  </form>
+  </div>
+ </main>
+</body>
+</html>

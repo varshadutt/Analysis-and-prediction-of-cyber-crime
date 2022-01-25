@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+body {
+  margin: 0;
+  background: #ecf0f1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  height: 110vh;
+  width: 30vw;
+  font-family: raleway;
+  background: rgb(190, 187, 187);
+}
+
+.item {
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.section {
+  padding: 20px;
+}
+        </style>
+        <title>Analysis</title>
+    </head>
+    <div class="sidebar">
+    <!--   This section should be at the top -->
+      <div class="section">
+        <div class="item"><a href="{{url_for('static', filename='totalcrimes.png')}}">Total Crimes</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='revenge.png')}}">Revenge Settling Scores</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='greedy.png')}}">Greed Money</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='disrepute.png')}}">Cause disrepute</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='prank.png')}}">Prank Satisfaction of Gaining Control</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='fraud.png')}}">Fraud Or Illiegal Gain</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='eveteasing .png')}}">Eve Teasing</a></div><br><br><br>
+        <div class="item"><a href="{{url_for('static', filename='overall.png')}}">Overall crimes</a> </div><br><br><br>
+      </div>
+    </div>
+    </html>
